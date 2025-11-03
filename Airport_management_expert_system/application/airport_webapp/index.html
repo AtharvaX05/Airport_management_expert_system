@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airport Management System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Airport Management System</h1>
+</header>
+
+<section id="flights" class="container">
+  <h2>Available Flights</h2>
+  <div id="flight-list" class="card-container"></div>
+</section>
+
+<section id="booking" class="container">
+  <h2>Book a Flight</h2>
+  <form id="booking-form">
+    <label for="flight">Select Flight:</label>
+    <select id="flight" name="flight"></select>
+    <label for="passenger-name">Your Name:</label>
+    <input type="text" id="passenger-name" required>
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Airport Management System</p>
+</footer>
+
+<!-- Chatbot -->
+<div id="chatbot">
+  <div id="chatbot-header">💬 Chat with Us</div>
+  <div id="chatbot-messages">"How Can I help you?"</div>
+  <div id="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type a message...">
+    <button id="chatbot-send">Send</button>
+  </div>
+</div>
+<button id="chatbot-toggle">💬</button>
+
+<script src="script.js"></script>
+</body>
+</html>
